@@ -1,0 +1,42 @@
+@import 'tailwindcss';
+
+:root {
+  color: #e2e8f0;
+  background-color: #020617;
+  font-family: Inter, 'Segoe UI', system-ui, sans-serif;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  min-height: 100vh;
+  background:
+    radial-gradient(circle at top right, rgba(34, 211, 238, 0.18), transparent 45%),
+    radial-gradient(circle at top left, rgba(139, 92, 246, 0.18), transparent 40%),
+    #020617;
+}
+
+#root {
+  min-height: 100vh;
+}
+
+.glass {
+  background: rgba(15, 23, 42, 0.75);
+  border: 1px solid rgba(148, 163, 184, 0.2);
+  backdrop-filter: blur(10px);
+}
+
+.glow:hover {
+  box-shadow: 0 0 30px rgba(34, 211, 238, 0.2);
+}
+
+.particle {
+  position: absolute;
+  width: 6px;
+  height: 6px;
+  border-radius: 9999px;
+  background: rgba(34, 211, 238, 0.45);
+}
